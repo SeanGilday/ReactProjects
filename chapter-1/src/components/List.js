@@ -17,6 +17,7 @@ function List() {
     return (
         <div>
             <h2>Characters</h2>
+            <div className='row'>
             {loading ? (
                 <div>Loading...</div>
             ): (
@@ -24,6 +25,7 @@ function List() {
                     <Character key={character.id} name={character.name} origin={character.origin} image={character.image}/>
                 ))
             )}
+            </div>
         </div>
     );
 }
